@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import {ListComponent} from './ListComponent/list.component';
+
+import {HeaderComponent} from './HeaderComponent/header.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule

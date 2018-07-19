@@ -1,0 +1,21 @@
+.header-container {
+  flex-direction: row;
+}
+
+.right-side-container {
+
+  flex-direction: column;
+
+}
+
+.left-side-container {
+
+  flex-direction: row;
+
+}
+
+.header-padding {
+
+  padding: 1em;
+
+}
