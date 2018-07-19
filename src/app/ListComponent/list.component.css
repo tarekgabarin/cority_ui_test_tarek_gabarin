@@ -1,6 +1,8 @@
 .flex-container {
   display: flex;
   flex-direction: column;
+
+
 }
 
 .light-grey {
@@ -32,9 +34,9 @@
 
   .list-size {
 
-    min-height: 100vh;
+    min-height: 60vh;
 
-    width: 100vw;
+    width: 95vw;
 
   }
 

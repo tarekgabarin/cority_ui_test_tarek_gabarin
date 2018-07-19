@@ -1,5 +1,15 @@
 .header-container {
   flex-direction: row;
+
+  justify-content: space-around;
+
+  flex-grow: 1;
+}
+
+.header-size {
+
+  height: 5vh;
+
 }
 
 .right-side-container {
