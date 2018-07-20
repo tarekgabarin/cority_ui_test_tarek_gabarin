@@ -15,7 +15,7 @@
 
 }
 
-.bold-list-title{
+.bold-list-title {
 
   font-size: large;
 
@@ -23,7 +23,7 @@
 
 }
 
-.list-name-and-counter{
+.list-name-and-counter {
 
   display: flex;
 
@@ -47,11 +47,6 @@
   justify-self: flex-end;
 }
 
-
-
-
-
-
 .right-side-container {
 
   align-content: center;
@@ -65,7 +60,6 @@
 .left-side-container {
 
   align-content: flex-end;
-
 
 }
 
@@ -97,7 +91,7 @@
 
 }
 
-.header-button:hover{
+.header-button:hover {
 
   background-color: #d7d7d7;
 

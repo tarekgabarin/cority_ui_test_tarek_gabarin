@@ -1,4 +1,4 @@
-.item-container{
+.item-container {
 
   display: flex;
 
@@ -20,8 +20,6 @@
 
 }
 
-
-
 .btn {
 
   height: 50px;
@@ -37,7 +35,6 @@
 .btn_delete_color:hover {
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-
 
 }
 
@@ -76,8 +73,6 @@
 
 }
 
-
-
 .item-column {
 
   display: flex;
@@ -88,13 +83,11 @@
 
 }
 
-
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
 
   .item-icon-container {
 
     justify-content: center;
-
 
   }
 
@@ -121,31 +114,19 @@
 
     border-radius: 50%;
 
-
   }
-
-
-
-
 
 }
 
-@media (max-width: 568px){
+@media (max-width: 568px) {
 
   .item-size {
 
     height: 17vh !important;
 
-
-
-
   }
 
 }
-
-
-
-
 
 .item-size {
 
