@@ -6,22 +6,29 @@
 
   flex-grow: 1;
 
-  background-color:  #ebebeb;
-
-  border-bottom: 1px #e0e0e0 solid;
-
-  border-right: 1px #e0e0e0 solid;
-
-  border-left: 1px #e0e0e0 solid;
-
-  border-bottom-left-radius: 5px;
-
-  border-bottom-right-radius: 5px;
-
   justify-content: center;
 
-  padding-top: 1em;
+  padding: 1em;
 
+}
+
+@media (max-width: 768px) {
+
+  .footer-desktop {
+    background-color:  #ebebeb;
+
+    border-bottom: 1px #e0e0e0 solid;
+
+    border-right: 1px #e0e0e0 solid;
+
+    border-left: 1px #e0e0e0 solid;
+
+    border-bottom-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+
+
+  }
 
 }
 

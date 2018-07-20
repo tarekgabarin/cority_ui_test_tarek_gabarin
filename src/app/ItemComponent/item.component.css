@@ -16,23 +16,11 @@
 
   padding: 1rem;
 
-}
-
-.avatar {
-
-  background-image: url("https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg");
-
-  width: 100px;
-  height: 100px;
-
-  background-size: cover;
-
-  background-position: top center;
-
-  border-radius: 50%;
-
+  border-left: solid 0.4em #2473bc;
 
 }
+
+
 
 .btn {
 
@@ -88,15 +76,7 @@
 
 }
 
-img {
 
-  border-radius: 50%;
-
-  background-size: cover;
-
-  height: 5vh;
-
-}
 
 .item-column {
 
@@ -108,15 +88,6 @@ img {
 
 }
 
-/*.button-item-column {*/
-
-  /*display: flex;*/
-
-  /*flex-direction: column;*/
-
-  /*justify-content: center;*/
-
-/*}*/
 
 @media (min-width: 768px)  {
 
@@ -127,16 +98,57 @@ img {
 
   }
 
+  img {
+
+    border-radius: 50%;
+
+    background-size: cover;
+
+    height: 5vh;
+
+  }
+
+  .avatar {
+
+    background-image: url("https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg");
+
+    width: 100px;
+    height: 100px;
+
+    background-size: cover;
+
+    background-position: top center;
+
+    border-radius: 50%;
 
 
+  }
+
+
+
+
+
+}
+
+@media (max-width: 568px){
+
+  .item-size {
+
+    height: 17vh !important;
+
+
+
+
+  }
 
 }
 
 
 
 
+
 .item-size {
 
-  height: 15vh;
+  height: 12vh;
 
 }
