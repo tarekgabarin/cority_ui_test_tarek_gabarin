@@ -8,13 +8,15 @@ import {ListComponent} from './ListComponent/list.component';
 import {HeaderComponent} from './HeaderComponent/header.component';
 
 import {ItemComponent} from './ItemComponent/item.component';
+import {FooterComponent} from './FooterComponent/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     HeaderComponent,
-    ItemComponent
+    ItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
