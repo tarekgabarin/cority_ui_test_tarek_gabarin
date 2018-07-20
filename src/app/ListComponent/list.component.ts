@@ -25,6 +25,22 @@ export class ListComponent {
       avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
       date: 'Friday July 20th 2018',
       isNewItem: false
+    },
+    {
+      title: 'Human throws frisbee',
+      subheading: 'Dog catches frisbee!',
+      subtext: 'Dog is a good boy!',
+      avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
+      date: 'Friday July 20th 2018',
+      isNewItem: false
+    },
+    {
+      title: 'Human throws frisbee',
+      subheading: 'Dog catches frisbee!',
+      subtext: 'Dog is a good boy!',
+      avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
+      date: 'Friday July 20th 2018',
+      isNewItem: false
     }
   ];
 

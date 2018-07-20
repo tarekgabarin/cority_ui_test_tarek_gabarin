@@ -23,8 +23,6 @@
 
   .list-size {
 
-    height: 65vh;
-
     width: 65vw;
 
   }
@@ -34,7 +32,7 @@
 
   .list-size {
 
-    min-height: 60vh;
+
 
     width: 95vw;
 
@@ -46,7 +44,7 @@
 
   .list-size {
 
-    min-height: 70vh;
+
 
     width: 95vw
 
