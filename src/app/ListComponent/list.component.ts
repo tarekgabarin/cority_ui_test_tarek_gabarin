@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, EventEmitter} from '@angular/core';
 
 import {ItemModel} from '../ItemComponent/item.model';
 
@@ -9,5 +9,8 @@ import {ItemModel} from '../ItemComponent/item.model';
 })
 
 export class ListComponent {
+  @Input() deleteItem: () => {};
+  @Input() checkItemAsOld: () => {};
   @Input() items: any [];
+  @Input() numberOfNewItems: number;
 }

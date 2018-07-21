@@ -1,9 +1,9 @@
 <div class="flex-container light-grey border-solid">
 
-  <app-header></app-header>
+  <app-header [numberOfNewItems]="numberOfNewItems" ></app-header>
 
   <section *ngFor="let item of items; let i = index">
-     <app-item [item]="item"></app-item>
+     <app-item [item]="item" [checkItemAsOld]="checkItemAsOld" [deleteItem]="deleteItem"></app-item>
 
 
   </section>

@@ -8,19 +8,17 @@ import {Component, Input} from '@angular/core';
 
 export class ItemComponent {
 
-  userClickedOnItem: boolean = false;
+  @Input() checkItemAsOld: () => {};
 
- @Input() item: {title: string, subheading: string, subtext: string, avatar: string, date: string };
+  @Input() deleteItem: () => {};
+
+  @Input() item: { title: string, subheading: string, subtext: string, avatar: string, date: string, isNewItem: boolean };
+
+  @Input() numberOfNewItems: number;
 
   updateLeftBlueBorder() {
 
-    return this.userClickedOnItem ? 'none' : 'solid 0.4em #2473bc';
-
-  }
-  clickOnItem() {
-    this.userClickedOnItem = true;
-
-    // TODO When the user clicks on the item, the number in the red badge on the header component should decrease
+    return this.item.isNewItem ? 'none' : 'solid 0.4em #2473bc';
 
   }
 }

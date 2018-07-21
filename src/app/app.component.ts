@@ -7,9 +7,8 @@ import {Component, Input} from '@angular/core';
 })
 
 
-
 export class AppComponent {
-  @Input() items: any[] = [
+  @Input() public items: any[] = [
     {
       title: 'Tarek learns Angular',
       subheading: 'He now knows Angular!',
@@ -43,4 +42,43 @@ export class AppComponent {
       isNewItem: false
     }
   ];
+
+  @Input() public numberOfNewItems: number = this.items.map(function (item) {
+    if (item.isNewItem) {
+      return item;
+    }
+  }).length;
+
+  @Input() public deleteItem(itemTitle: string, itemSubheading: string, itemSubtext: string, itemDate: string) {
+
+    this.items = this.items.map(function (item) {
+      if (item.title !== itemTitle && item.subheading !== itemSubheading) {
+        if (item.subtext === itemSubtext && item.data !== itemDate) {
+          return item;
+        }
+      }
+    });
+    this.numberOfNewItems = this.items.map(function (item) {
+      if (item.isNewItem) {
+        return item;
+      }
+    }).length;
+  }
+  @Input() public checkItemAsOld(itemTitle: string, itemSubheading: string, itemSubtext: string, itemDate: string) {
+    for (const item of this.items) {
+      if (item.title !== itemTitle && item.subheading !== itemSubheading) {
+        if (item.subtext === itemSubtext && item.data !== itemDate) {
+          item.isNewItem = true;
+        }
+      }
+    }
+
+    this.numberOfNewItems = this.items.map(function (item) {
+      if (item.isNewItem) {
+        return item;
+      }
+    }).length;
+  }
 }
+
+

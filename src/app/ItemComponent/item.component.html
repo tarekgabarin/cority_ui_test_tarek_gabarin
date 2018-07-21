@@ -1,4 +1,4 @@
-<div (click)="clickOnItem()" class="item-container item-size" [ngStyle]="{borderLeft: updateLeftBlueBorder() }">
+<div (click)="checkItemAsOld(item.title, item.subheading, item.subtext, item.date)" class="item-container item-size" [ngStyle]="{borderLeft: updateLeftBlueBorder() }">
 
   <div class="item-column">
 
@@ -41,7 +41,7 @@
   <div class="item-column">
 
 
-    <button class="btn btn_delete_color">
+    <button class="btn btn_delete_color" (click)="deleteItem(item.title, item.subheading, item.subtext, item.date)">
 
       <i class="fa fa-trash" aria-hidden="true"></i>
 
