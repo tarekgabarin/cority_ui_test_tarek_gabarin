@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Services} from '../services';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,9 @@ import {Component, Input} from '@angular/core';
 export class HeaderComponent {
 
   @Input() numberOfNewItems: number;
+
+  constructor(private listServices: Services) {
+  }
 
 
 

@@ -1,6 +1,7 @@
 import {Component, Input, EventEmitter} from '@angular/core';
 
 import {ItemModel} from '../ItemComponent/item.model';
+import {Services} from '../services';
 
 @Component({
   selector: 'app-list',
@@ -9,8 +10,10 @@ import {ItemModel} from '../ItemComponent/item.model';
 })
 
 export class ListComponent {
-  @Input() deleteItem: () => {};
-  @Input() checkItemAsOld: () => {};
   @Input() items: any [];
   @Input() numberOfNewItems: number;
+
+  constructor(private listServices: Services) {
+  }
+
 }

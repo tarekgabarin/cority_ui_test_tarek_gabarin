@@ -10,6 +10,8 @@ import {HeaderComponent} from './HeaderComponent/header.component';
 import {ItemComponent} from './ItemComponent/item.component';
 import {FooterComponent} from './FooterComponent/footer.component';
 
+import {Services} from './services';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import {FooterComponent} from './FooterComponent/footer.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [Services],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
