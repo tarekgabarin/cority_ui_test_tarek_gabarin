@@ -15,6 +15,11 @@ export class HeaderComponent {
   constructor(private listServices: Services) {
   }
 
+  onCaretClick(event) {
 
+    event.preventDefault();
 
+    this.listServices.toggleList();
+
+  }
 }

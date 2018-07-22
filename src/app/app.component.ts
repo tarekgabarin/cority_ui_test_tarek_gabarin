@@ -17,6 +17,8 @@ export class AppComponent implements OnInit {
 
   @Input() numOfItems: number;
 
+  @Input() isListHidden: boolean;
+
   constructor(public listServices: Services) {
   }
 

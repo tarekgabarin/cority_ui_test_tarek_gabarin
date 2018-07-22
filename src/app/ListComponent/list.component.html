@@ -2,7 +2,7 @@
 
   <app-header [numOfItems]="numOfItems" [numberOfNewItems]="numberOfNewItems" ></app-header>
 
-  <section *ngFor="let item of items; let i = index">
+  <section [ngStyle]="{display: updateListVisibility()}" *ngFor="let item of items; let i = index">
      <app-item [numberOfNewItems]="numberOfNewItems" [item]="item"> </app-item>
 
 

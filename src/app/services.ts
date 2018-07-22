@@ -37,6 +37,8 @@ export class Services {
     }
   ];
 
+  isListHidden: boolean = false;
+
   numberOfNewItems: number = this.items.map(function (item) {
     if (item.isNewItem) {
       return item;
@@ -112,6 +114,14 @@ export class Services {
     console.log(this.numberOfNewItems);
 
     console.log(this.items);
+
+  }
+
+  toggleList = () => {
+
+    this.isListHidden = !this.isListHidden;
+
+    console.log(this.isListHidden);
 
   }
 }

@@ -13,8 +13,17 @@ export class ListComponent {
   @Input() items: any [];
   @Input() numberOfNewItems: number;
   @Input() numOfItems: number;
+  @Input() isListHidden: boolean;
 
   constructor(private listServices: Services) {
+  }
+
+  updateListVisibility() {
+
+    console.log(this.isListHidden);
+
+    return this.isListHidden ? 'none !important' : 'block';
+
   }
 
 }
