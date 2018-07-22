@@ -18,6 +18,8 @@ export class HeaderComponent {
 
   onCaretClick(event) {
 
+    console.log(this.numOfItems);
+
     event.preventDefault();
 
     this.listServices.toggleList();

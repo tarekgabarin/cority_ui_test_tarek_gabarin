@@ -39,11 +39,26 @@ export class Services {
 
   isListHidden: boolean = false;
 
-  numberOfNewItems: number = this.items.map(function (item) {
-    if (item.isNewItem) {
-      return item;
+
+  getNumberOfNewItems() {
+
+    let counter: number = 0;
+
+    for (const item of this.items) {
+
+      if (item.isNewItem) {
+        counter++;
+
+      }
+
     }
-  }).length;
+
+    return counter;
+
+  }
+
+
+  numberOfNewItems: number = this.getNumberOfNewItems();
 
   deleteItem = (itemObj: { itemTitle: string, itemSubheading: string, itemSubtext: string, itemDate: string }) => {
     const newItems: any [] = [];
@@ -115,7 +130,7 @@ export class Services {
 
     console.log(this.items);
 
-  }
+  };
 
   toggleList = () => {
 
@@ -123,5 +138,5 @@ export class Services {
 
     /// console.log(this.isListHidden);
 
-  }
+  };
 }
