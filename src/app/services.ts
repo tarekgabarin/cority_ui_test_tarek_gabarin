@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 export class Services {
   public items: any[] = [
     {
-      title: 'Tarek learns Angular',
+      title: 'Bob learns Angular',
       subheading: 'He now knows Angular!',
       subtext: 'He adds another framework to his techstack!',
       avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',

@@ -12,6 +12,7 @@ import {Services} from '../services';
 export class ListComponent {
   @Input() items: any [];
   @Input() numberOfNewItems: number;
+  @Input() numOfItems: number;
 
   constructor(private listServices: Services) {
   }

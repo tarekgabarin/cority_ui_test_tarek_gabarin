@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 import {Services} from './services';
 
@@ -11,18 +11,20 @@ import {Services} from './services';
 
 export class AppComponent implements OnInit {
 
-  items: { title: string, subheading: string, subtext: string, avatar: string, date: string, isNewItem: boolean }[] = [];
+  @Input() items: { title: string, subheading: string, subtext: string, avatar: string, date: string, isNewItem: boolean }[] = [];
 
-  numberOfNewItems: number;
+  @Input() numberOfNewItems: number;
 
-  constructor(private listServices: Services) {
+  @Input() numOfItems: number;
+
+  constructor(public listServices: Services) {
   }
 
   ngOnInit() {
 
-    this.items = this.listServices.items;
-
-    this.numberOfNewItems = this.listServices.numberOfNewItems;
+    // this.items = this.listServices.items;
+    //
+    // this.numberOfNewItems = this.listServices.numberOfNewItems;
 
   }
 
