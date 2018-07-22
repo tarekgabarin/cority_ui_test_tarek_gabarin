@@ -3,7 +3,7 @@
   <app-header [numberOfNewItems]="numberOfNewItems" ></app-header>
 
   <section *ngFor="let item of items; let i = index">
-     <app-item [numberOfNewItems]="numberOfNewItems" [itemsArray]="items" [item]="item"></app-item>
+     <app-item [numberOfNewItems]="numberOfNewItems" [item]="item"> </app-item>
 
 
   </section>

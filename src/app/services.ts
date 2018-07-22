@@ -85,8 +85,7 @@ export class Services {
 
       if (item.title === itemObj.itemTitle && item.subheading === itemObj.itemSubheading && item.subtext === itemObj.itemSubtext && item.date === itemObj.itemDate) {
         return {title: item.title, subheading: item.subheading, subtext: item.subtext, date: item.date, isNewItem: false};
-      }
-      else {
+      } else {
         return item;
 
       }
@@ -115,3 +114,4 @@ export class Services {
     console.log(this.items);
 
   }
+}

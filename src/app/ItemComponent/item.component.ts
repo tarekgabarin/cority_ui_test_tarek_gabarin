@@ -13,7 +13,7 @@ export class ItemComponent {
 
   @Input() numberOfNewItems: number;
 
-  @Input() itemsArray: any[];
+///  @Input() itemsArray: any[];
 
   constructor(private listServices: Services) {
   }
