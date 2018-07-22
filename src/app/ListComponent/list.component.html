@@ -1,6 +1,6 @@
 <div class="flex-container light-grey border-solid">
 
-  <app-header [numberOfNewItems]="numberOfNewItems" ></app-header>
+  <app-header [numOfItems]="numOfItems" [numberOfNewItems]="numberOfNewItems" ></app-header>
 
   <section *ngFor="let item of items; let i = index">
      <app-item [numberOfNewItems]="numberOfNewItems" [item]="item"> </app-item>

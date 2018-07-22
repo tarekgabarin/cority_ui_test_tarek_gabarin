@@ -10,6 +10,7 @@ import {Services} from '../services';
 export class HeaderComponent {
 
   @Input() numberOfNewItems: number;
+  @Input() numOfItems: number;
 
   constructor(private listServices: Services) {
   }

@@ -20,7 +20,7 @@ export class ItemComponent {
 
   updateLeftBlueBorder() {
 
-    return this.item.isNewItem ? 'none' : 'solid 0.4em #2473bc';
+    return this.item.isNewItem ? 'solid 0.4em #2473bc' : 'none';
 
   }
 
