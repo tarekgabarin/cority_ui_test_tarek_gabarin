@@ -17,13 +17,4 @@ export class ListComponent {
 
   constructor(private listServices: Services) {
   }
-
-  updateListVisibility() {
-
-    console.log(this.isListHidden);
-
-    return this.isListHidden ? 'none !important' : 'block';
-
-  }
-
 }

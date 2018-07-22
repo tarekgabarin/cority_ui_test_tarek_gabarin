@@ -121,7 +121,7 @@ export class Services {
 
     this.isListHidden = !this.isListHidden;
 
-    console.log(this.isListHidden);
+    /// console.log(this.isListHidden);
 
   }
 }

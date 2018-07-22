@@ -11,6 +11,7 @@ export class HeaderComponent {
 
   @Input() numberOfNewItems: number;
   @Input() numOfItems: number;
+  @Input() isListHidden: boolean;
 
   constructor(private listServices: Services) {
   }
