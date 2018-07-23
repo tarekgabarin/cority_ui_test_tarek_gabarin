@@ -1,36 +1,31 @@
 import {Injectable} from '@angular/core';
 
+import {ItemModel} from './ItemComponent/item.model';
+
 @Injectable()
 export class Services {
   public items: any[] = [
     {
-      title: 'Bob learns Angular',
+      title: 'Click on this item to check it as done',
+      subheading: 'When you click on it, the badge number will decrease!',
+      subtext: 'and the blue bar will disappear!',
+      avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
+      date: 'Friday July 20th 2018',
+      isNewItem: true
+    },
+
+    {
+      title: 'Tarek learns Angular',
       subheading: 'He now knows Angular!',
       subtext: 'He adds another framework to his techstack!',
       avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
       date: 'Friday July 20th 2018',
-      isNewItem: true
+      isNewItem: false
     },
     {
       title: 'Human throws frisbee',
       subheading: 'Dog catches frisbee!',
       subtext: 'Dog is a good boy!',
-      avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
-      date: 'Friday July 20th 2018',
-      isNewItem: false
-    },
-    {
-      title: 'Human sdfgsfsdfthrows frisbee',
-      subheading: 'Dog cadsfsatches frisbee!',
-      subtext: 'Dog is a good bvsdfvsdvoy!',
-      avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
-      date: 'Friday July 20th 2018',
-      isNewItem: false
-    },
-    {
-      title: 'Humavsdvsdn throsdvsdvsdvws frisbee',
-      subheading: 'Dog cavsddsvstches frisbee!',
-      subtext: 'Dog is adsvsdfeegedsf good boy!',
       avatar: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
       date: 'Friday July 20th 2018',
       isNewItem: false
@@ -136,7 +131,50 @@ export class Services {
 
     this.isListHidden = !this.isListHidden;
 
-    /// console.log(this.isListHidden);
+  };
+
+  addNewItem = () => {
+
+
+    const d = new Date();
+
+    const weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    const months: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    const currentDay = weekdays[d.getDay()];
+
+    const currentMonth = months[d.getMonth()];
+
+    const currentDate = d.getDate() + 'th';
+
+    const currentYear = d.getFullYear();
+
+    const dateString = `${currentDay} ${currentMonth} ${currentDate} ${currentYear}`;
+
+    const x: number = Math.floor((Math.random() * 10) + 1);
+
+    const y: number = Math.floor((Math.random() * 10) + 1);
+
+    const returnObj = new ItemModel(`Title ${x}`, `Subheading ${y}`, 'subtext', dateString);
+
+    this.items.push(returnObj);
+
+    let numberOfNewFilteredItems: number = 0;
+
+    for (const item of this.items) {
+
+      if (item.isNewItem) {
+
+        numberOfNewFilteredItems++;
+
+      }
+
+    }
+
+    this.numberOfNewItems = numberOfNewFilteredItems;
+
 
   };
+
 }

@@ -25,4 +25,13 @@ export class HeaderComponent {
     this.listServices.toggleList();
 
   }
+
+  onAddClick(event){
+
+    event.preventDefault();
+
+    this.listServices.addNewItem();
+
+  }
+
 }
