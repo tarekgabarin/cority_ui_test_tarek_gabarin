@@ -24,6 +24,12 @@ export class ItemComponent {
 
   }
 
+  getAvatarString() {
+
+      return this.item.avatar;
+
+  }
+
   onCheckNewItem(itemTitle: string, itemSubheading: string, itemSubtext: string, itemDate: string) {
 
     // console.log(    {

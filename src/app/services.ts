@@ -96,7 +96,7 @@ export class Services {
     const newItems = this.items.map((item) => {
 
       if (item.title === itemObj.itemTitle && item.subheading === itemObj.itemSubheading && item.subtext === itemObj.itemSubtext && item.date === itemObj.itemDate) {
-        return {title: item.title, subheading: item.subheading, subtext: item.subtext, date: item.date, isNewItem: false};
+        return {title: item.title, subheading: item.subheading, subtext: item.subtext, date: item.date, isNewItem: false, avatar: item.avatar};
       } else {
         return item;
 
